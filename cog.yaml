@@ -1,0 +1,10 @@
+image: "r8.im/hachej/comfyui"
+
+build:
+  gpu: true
+  python_version: "3.9"
+  python_requirements: requirements.txt
+  cuda: "11.6"
+
+# predict.py defines how predictions are run on your model
+predict: "cog_predict.py:Predictor"
